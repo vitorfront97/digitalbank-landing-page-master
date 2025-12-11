@@ -6,16 +6,24 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-this-blue-950: var(--blue-950);
+  --color-this-green-500: var(--green-500);
+  --color-this-cyan-400: var(--cyan-400);
+  --color-this-gray-600: var(--gray-600);
+  --color-this-gray-100: var(--gray-100);
+  --color-this-gray-50: var(--gray-50);
+  --color-this-white: var(--white);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --blue-950: hsl(233, 26%, 24%);
+    --green-500: hsl(136, 64%, 51%);
+    --cyan-400: hsl(192, 69%, 51%);
+    --gray-600: hsl(233, 8%, 62%);
+    --gray-100: hsl(220, 16%, 96%);
+    --gray-50: hsl(0, 0%, 98%);
+    --white: hsl(0, 100%, 100%);
   }
 }
 
@@ -23,4 +31,6 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  overflow-x: hidden;
 }
