@@ -17,7 +17,7 @@ export default function SectionArticle({src, title, children, alt}: articleProps
         height={0}
         alt={alt}
       />
-      <h4 className="text-this-blue-950 text-2xl">{title}</h4>
+      <h3 className="text-this-blue-950 text-2xl">{title}</h3>
       <p className="text-[14px]/4 text-this-gray-600">{children}</p>
     </article>
   );

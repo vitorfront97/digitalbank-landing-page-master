@@ -6,12 +6,12 @@ import Footer from "./widgets/Footer";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Header />
       <Main />
       <SectionCards />
       <SectionArticles />
       <Footer />
-    </div>
+    </>
   );
 }

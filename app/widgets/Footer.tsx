@@ -4,7 +4,7 @@ import Button from "../components/Button";
 export default function Footer() {
   return (
     <footer className="mt-16 py-12 pb-8 flex flex-col items-center gap-12 bg-this-blue-950 lg:px-36 lg:items-stretch">
-      <nav className="flex flex-col items-center gap-8 md:flex-row md:items-start lg:justify-between">
+      <div className="flex flex-col items-center gap-8 md:flex-row md:items-start lg:justify-between">
         <div className="flex flex-col items-center gap-8 md:items-stretch md:gap-16">
           <Image
             className="w-auto"
@@ -93,7 +93,7 @@ export default function Footer() {
             © Digitalbank. All Rights Reserved
           </span>
         </div>
-      </nav>
+      </div>
       <div className="text-this-gray-50 text-sm self-center">
         Challenge by{" "}
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
