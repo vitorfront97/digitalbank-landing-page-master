@@ -3,7 +3,7 @@ import Button from "../components/Button";
 
 export default function Main() {
   return (
-    <main className="overflow-x-hidden pb-16 px-6 flex flex-col items-center bg-this-white bg-[url(/bg-intro-mobile.svg)] bg-top-right bg-no-repeat md:px-24 lg:bg-[url(/bg-intro-desktop.svg)] lg:bg-position-[top_-16rem_left_32rem] lg:flex-row-reverse xl:bg-position-[top_-16rem_left_38rem] 2xl:px-36 2xl:bg-position-[bottom_8rem_left_42rem]">
+    <main className="pb-16 px-6 flex flex-col items-center bg-this-white bg-[url(/bg-intro-mobile.svg)] bg-top-right bg-no-repeat md:px-24 lg:bg-[url(/bg-intro-desktop.svg)] lg:bg-position-[top_-16rem_left_32rem] lg:flex-row-reverse lg:overflow-x-hidden xl:bg-position-[top_-16rem_left_38rem] 2xl:px-36 2xl:bg-position-[bottom_8rem_left_42rem]">
       <Image
         className="h-auto relative -top-29 lg:w-250 lg:-top-21 lg:-right-40 xl:-top-28 xl:-right-46"
         src="/image-mockups.png"
