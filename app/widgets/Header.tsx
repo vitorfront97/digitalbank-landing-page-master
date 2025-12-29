@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <header>
       <nav className="md:hidden">
-        <div className="px-8 py-6 flex items-center justify-between relative bg-this-gray-50 z-20">
+        <div className="px-6 py-6 flex items-center justify-between relative bg-this-gray-50 z-20">
           <a href="/">
             <Image
               className="w-auto"
