@@ -6,10 +6,54 @@ import Button from "../components/Button";
 
 export default function Header() {
   const [openMenu, setOpenMenu] = useState(false);
-  useEffect(() => {
+
+  /* useEffect(() => {
     document.body.style.overflowY = openMenu ? "hidden" : "auto";
     document.documentElement.style.overflowY = openMenu ? "hidden" : "auto";
-  }, [openMenu]);
+  }, [openMenu]); */
+
+  // utils/lockScroll.ts
+  const lockScroll = () => {
+    const scrollY = window.scrollY;
+
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.left = "0";
+    document.body.style.right = "0";
+    document.body.style.width = "100%";
+
+    document.body.dataset.scrollY = scrollY.toString();
+  };
+
+  const unlockScroll = () => {
+    const scrollY = document.body.dataset.scrollY;
+
+    document.body.style.position = "";
+    document.body.style.top = "";
+    document.body.style.left = "";
+    document.body.style.right = "";
+    document.body.style.width = "";
+
+    if (scrollY) {
+      window.scrollTo(0, parseInt(scrollY));
+    }
+  };
+
+  useEffect(() => {
+  if (openMenu) {
+    lockScroll();
+  } else {
+    unlockScroll();
+  }
+
+  return unlockScroll;
+}, [openMenu]);
+
+
+
+
+
+
   return (
     <header>
       <nav className="md:hidden">
