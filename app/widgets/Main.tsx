@@ -3,7 +3,7 @@ import Button from "../components/Button";
 
 export default function Main() {
   return (
-    <main className="touch-none pb-16 flex flex-col items-center bg-this-white bg-[url(/bg-intro-mobile.svg)] bg-top-right bg-no-repeat sm:px-8 sm:pb-0 sm:justify-between md:px-24 md:bg-[url(/bg-intro-desktop.svg)] md:bg-position-[top_-16rem_left_32rem] lg:items-start lg:flex-row-reverse lg:bg-position-[top_-16rem_left_26rem] xl:px-36 xl:bg-position-[top_-16rem_left_34rem] 2xl:bg-position-[top_-16rem_right_-26rem]">
+    <main className="pb-16 flex flex-col items-center bg-this-white bg-[url(/bg-intro-mobile.svg)] bg-top-right bg-no-repeat sm:px-8 sm:pb-0 sm:justify-between md:px-24 md:bg-[url(/bg-intro-desktop.svg)] md:bg-position-[top_-16rem_left_32rem] lg:items-start lg:flex-row-reverse lg:bg-position-[top_-16rem_left_26rem] xl:px-36 xl:bg-position-[top_-16rem_left_34rem] 2xl:bg-position-[top_-16rem_right_-26rem]">
       <div className="px-4 sm:max-w-1/2">
         <Image
           className="max-w-[clamp(350px,60vw,700px)] h-auto relative top-[-7.8rem] left-1/2 -translate-x-1/2 lg:-top-32 lg:-left-5 lg:translate-none xl:-top-36 xl:left-9 2xl:left-41"
